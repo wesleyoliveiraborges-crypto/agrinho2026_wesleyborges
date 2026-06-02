@@ -1,10 +1,16 @@
 body{
+    margin:0;
     text-align:center;
-    background:#87CEEB;
+    background:linear-gradient(#7ed957,#b5ff9f);
     font-family:Arial;
 }
 
+h1{
+    color:#2e4d1f;
+}
+
 canvas{
-    border:3px solid black;
-    background:#7CFC00;
+    background:white;
+    border:4px solid black;
+    margin-top:10px;
 }
