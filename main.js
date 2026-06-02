@@ -1,3 +1,5 @@
+const agricultor = new Image();
+agricultor.src = "imagens/agricultor.png";
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
@@ -38,10 +40,14 @@ function mover(){
     if(teclas["ArrowLeft"]) player.x -= player.speed;
     if(teclas["ArrowRight"]) player.x += player.speed;
 }
-
 function desenharPlayer(){
-    ctx.fillStyle="blue";
-    ctx.fillRect(player.x,player.y,player.size,player.size);
+    ctx.drawImage(
+        agricultor,
+        player.x,
+        player.y,
+        50,
+        50
+    );
 }
 
 function desenharFrutas(){
